@@ -1,0 +1,31 @@
+@import "../../../app/styles/global";
+.container {
+  background-color: #F4F0EC;
+  width: 1920px;
+  height: 457px;
+  margin-top: 12.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .insideContainer {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .counterBox {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .counterNumbers {
+        font-weight: 400;
+        font-size: 85px;
+        line-height: 125%;
+        color: #CDA274;
+        font-family: $heading-text;
+      }
+    }
+
+  }
+
+}

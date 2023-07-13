@@ -1,0 +1,19 @@
+.followOurProject {
+  width: 1200px;
+  height: 1541px;
+  margin-top: 9em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .followOurProjectText {
+    width: 737px;
+  }
+  .projectCardsWrapper {
+    margin-top: 6em;
+    height: 1311px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

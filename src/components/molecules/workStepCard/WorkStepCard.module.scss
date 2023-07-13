@@ -1,0 +1,50 @@
+@mixin container {
+  width: 967px;
+  height: 485px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  .imgBox {
+    width: 453px;
+    height: 485px;
+        .photoStyle {
+          border-radius: 0 123px 0 326.5px;
+    }
+  }
+  .informationWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    .stepWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 463px;
+      height: 95px;
+      span {
+        color: #FFFFFF;
+        font-size: 120px;
+        font-weight: 400;
+      }
+    }
+    .textWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1em;
+      text-align: start;
+    }
+  }
+}
+
+.primary {
+  @include container;
+}
+
+.secondary {
+  @include container;
+  flex-direction: row-reverse;
+}

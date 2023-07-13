@@ -1,0 +1,30 @@
+.container {
+  width: 370px;
+  height: 339px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2em;
+  padding-top: 3em;
+  .personInfo {
+    width: 296px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    .textInfo {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      margin-left: 1em;
+    }
+  }
+  .peopleReview {
+    width: 296px;
+    text-align: start;
+
+  }
+}

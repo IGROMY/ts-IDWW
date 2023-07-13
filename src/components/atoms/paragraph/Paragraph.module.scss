@@ -1,0 +1,13 @@
+@import "../../../app/styles/global";
+
+.large {
+  @include paragraph(22px)
+}
+
+.medium {
+  @include paragraph(20px)
+}
+
+.small {
+  @include paragraph(18px)
+}

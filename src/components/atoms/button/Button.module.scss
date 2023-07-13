@@ -1,0 +1,57 @@
+@import "../../../app/globals";
+
+@mixin button($background, $width) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  //padding: 26px 54px;
+  gap: 10px;
+  color: #FFFFFF;
+  text-wrap: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 125%;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(192, 192, 192, 0.35);
+  border-radius: 18px;
+
+  background: $background;
+  width: $width;
+  //height: 124px;
+}
+
+.primary {
+  @include button($secondary-color, 253.14px);
+  .icon {
+    path {
+      stroke: rgba(205, 162, 116, 1);
+    };
+  }
+}
+
+.secondary {
+  @include button($primary-color, 253.14px);
+  .icon {
+    path {
+      stroke: $secondary-color;
+    };
+  }
+
+}
+
+.large {
+  @include button($secondary-color, 287.14px);
+  .icon {
+    path {
+      stroke: rgba(205, 162, 116, 1);
+    };
+  }
+}
+
+.iconSecondary {
+  //@include arrow($secondary-color)
+  path {
+    stroke: $secondary-color;
+  };
+}

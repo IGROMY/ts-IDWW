@@ -1,0 +1,48 @@
+.freeEstimate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  height: 700px;
+  margin-top: 15em;
+  gap: 5em;
+  .estimateContent {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    .estimateTextWrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 2em;
+      text-align: start;
+      .estimateHeadingWrapper {
+        width: 420px;
+        height: 189px;
+      }
+    }
+    .estimateContact {
+      margin-top: 3em;
+      width: 277px;
+      height: 215px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .estimateNumberWrapper {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  button {
+    width: 238px;
+    height: 75px;
+  }
+  .estimateImgBox {
+    width: 653px;
+    height: 700px;
+  }
+}

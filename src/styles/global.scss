@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,400;0,700;1,400&display=swap');
+
+//colors
+$bg-color: #FFFFFF;
+$primary-color: #CDA274;
+$secondary-color: #292F36;
+$wrapper-color: #F4F0EC;
+
+//fonts
+$heading-text: "DM Serif Display", sans-serif;
+$paragraph-text: "Jost", sans-serif;
+
+//text mixins
+@mixin heading($font-size) {
+  color: $secondary-color;
+  font-size: $font-size;
+  line-height: 125%;
+  font-weight: 400;
+  font-style: normal;
+  font-family: $heading-text;
+}
+
+@mixin paragraph($font-size) {
+  color: #4D5053;
+  font-size: $font-size;
+  line-height: 150%;
+  font-weight: 400;
+  font-style: normal;
+  font-family: $paragraph-text;
+}
+
+@mixin text($font-style, $font-weight) {
+  color: #4D5053;
+  font-size: 22px;
+  line-height: 150%;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  font-family: $paragraph-text;
+}
+
+@mixin container {
+  width: 1300px;
+  //height: 3479px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

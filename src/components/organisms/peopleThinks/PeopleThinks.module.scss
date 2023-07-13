@@ -1,0 +1,25 @@
+.peopleThinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  height: 679px;
+  background-color: #F4F0EC;
+  border-radius: 70px;
+  margin-top: 15em;
+  gap: 2em;
+  .peopleThinksHeading {
+    align-self: center;
+    width: 547px;
+    height: 126px;
+  }
+  .reviewsWrapper {
+    width: 1150px;
+    height: 339px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

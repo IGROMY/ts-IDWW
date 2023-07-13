@@ -1,0 +1,13 @@
+@import "src/styles/global";
+
+.normal {
+  @include text(normal, 400)
+}
+
+.bold {
+  @include text(normal, 700)
+}
+
+.italic {
+  @include text(italic, 400)
+}

@@ -1,0 +1,15 @@
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 795px;
+    height: 175px;
+    margin-top:20px ;
+    .label{
+      display: flex;
+      justify-content: flex-start;
+    }
+    .textArea{
+      border: none;
+      border-bottom: 3px solid black;
+    }
+  }

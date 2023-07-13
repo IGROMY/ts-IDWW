@@ -1,0 +1,25 @@
+.containerCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 283.55px;
+  height: 433px;
+  background: #FFFFFF;
+  border-radius: 1em;
+  .textBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 227.25px;
+    height: 63.47px;
+  }
+  .link {
+    display: flex;
+    flex-direction: row;
+    width: 225px;
+    height: 23px;
+    gap: 3.375em;
+  }
+}
