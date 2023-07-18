@@ -1,10 +1,10 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import styles from "./CardProgressAbout.module.scss"
-import Typography from "../../atoms/typography/Typography";
-import Text from "../../atoms/text/Text";
-import Button from "../../atoms/button/Button";
+import Typography from "../../atoms/typography/Typography.tsx";
+import Text from "../../atoms/text/Text.tsx";
+import Button from "../../atoms/button/Button.tsx";
 import cn from "classnames";
-import {ICardProgressAboutProps} from "./CardProgressAbout.types"
+import {ICardProgressAboutProps} from "./CardProgressAbout.types.ts"
 
 const CardProgressAbout:FC<ICardProgressAboutProps> = ({variant, header, childrenText, textButton, photo}) => {
 

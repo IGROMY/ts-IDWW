@@ -1,9 +1,10 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import styles from "./projectCardLittle.module.scss";
-import Typography from "../../atoms/typography/Typography";
-import Text from "../../atoms/text/Text";
-import {ReactSVG} from "react-svg";
-import {IProjectCardLittleProps} from './ProjectCardLittle.types'
+import Typography from "../../atoms/typography/Typography.tsx";
+import Text from "../../atoms/text/Text.tsx";
+import SVG from "react-inlinesvg";
+import {IProjectCardLittleProps} from './ProjectCardLittle.types.ts'
+import linkIcon from "../../../assets/icons/linkIcon.svg";
 
 const ProjectCardLittle:FC<IProjectCardLittleProps> = ({imageUrl, name, href}) => {
     return (
@@ -22,7 +23,7 @@ const ProjectCardLittle:FC<IProjectCardLittleProps> = ({imageUrl, name, href}) =
                             Decor / Architecture
                         </Text>
                     </div>
-                    <a href={href}><ReactSVG src='/assets/icons/\linkIcon'/></a>
+                    <a href={href}><SVG src={linkIcon}/></a>
                 </div>
             </div>
         </div>

@@ -1,14 +1,13 @@
-import React from 'react';
 import styles from './WannaJoinWrapper.module.scss'
 import Typography from "../../atoms/typography/Typography";
 import Button from "../../atoms/button/Button";
 import Text from "../../atoms/text/Text";
-// import {useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 const WannaJoinWrapper = () => {
-    // const navigate = useNavigate();
-    // const handleLink =() =>{
-    //   navigate('/contact-us')
-    // }
+    const navigate = useNavigate();
+    const handleLink =() =>{
+      navigate('/contact-us')
+    }
     return (
         <div className={styles.container}>
             <div className={styles.textWrapper}>
@@ -24,7 +23,7 @@ const WannaJoinWrapper = () => {
                     text='Contact with us'
                     variant='secondary'
                     type={undefined}
-                    // onClick={handleLink}
+                    onClick={handleLink}
                 />
             </div>
         </div>

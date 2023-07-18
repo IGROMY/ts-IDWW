@@ -1,7 +1,7 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import styles from './ PeopleReviewCard.module.scss'
-import Text from "../../atoms/text/Text.jsx";
-import {IPeopleReviewCardProps} from "./PeopleReviewCard.types"
+import Text from "../../atoms/text/Text.tsx";
+import {IPeopleReviewCardProps} from "./PeopleReviewCard.types.ts"
 const PeopleReviewCard:FC<IPeopleReviewCardProps> = ({avatar, name, location, review}) => {
     return (
         <div className={styles.container}>

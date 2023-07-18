@@ -1,8 +1,7 @@
-import React from 'react';
 import styles from './Counter.module.scss';
 import line from '../../../app/assets/icons/Line.svg'
 import Text from "../text/Text";
-import { ReactSVG } from 'react-svg';
+import SVG from "react-inlinesvg";
 
 const Counter = () => {
     return (
@@ -13,21 +12,21 @@ const Counter = () => {
                     <Text variant='normal'>Years Of Experience</Text>
                 </div>
                 <div>
-                    <ReactSVG src="/assets/icons/Line.svg"/>
+                    <SVG src={line}/>
                 </div>
                 <div className={styles.counterBox}>
                     <span className={styles.counterNumbers}>85</span>
                     <Text variant='normal'>Success Project</Text>
                 </div>
                 <div>
-                    <ReactSVG src="/assets/icons/Line.svg"/>
+                    <SVG src={line}/>
                 </div>
                 <div className={styles.counterBox}>
                     <span className={styles.counterNumbers}>15</span>
                     <Text variant='normal'>Active Project</Text>
                 </div>
                 <div>
-                    <ReactSVG src="/assets/icons/Line.svg"/>
+                    <SVG src={line}/>
                 </div>
                 <div className={styles.counterBox}>
                     <span className={styles.counterNumbers}>95</span>

@@ -1,14 +1,14 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import styles from './OurProjectCard.module.scss'
 import linkIcon from '../../../assets/icons/linkIcon.svg'
-import Typography from "../../atoms/typography/Typography.jsx";
-import Text from "../../atoms/text/Text.jsx";
-import {ReactSVG} from "react-svg"
-import {IOurProjectCardTypesProps} from "./OurProjectCard.types"
+import Typography from "../../atoms/typography/Typography.tsx";
+import Text from "../../atoms/text/Text.tsx";
+import SVG from "react-inlinesvg"
+import {IOurProjectCardTypesProps} from "./OurProjectCard.types.ts"
 const OurProjectCard:FC<IOurProjectCardTypesProps> = ({src,heading,text}) => {
     return (
         <div className={styles.container}>
-            <img src={src}/>
+            <img alt='img' src={src}/>
             <div className={styles.informationWrapper}>
                 <div className={styles.textPart}>
                     <Typography variant='h6'>
@@ -18,7 +18,7 @@ const OurProjectCard:FC<IOurProjectCardTypesProps> = ({src,heading,text}) => {
                         {text}
                     </Text>
                 </div>
-                <a><ReactSVG src={linkIcon}/></a>
+                <a><SVG src={linkIcon}/></a>
             </div>
         </div>
     );

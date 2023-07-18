@@ -1,8 +1,8 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import styles from "./PagesHeading.module.scss";
-import Typography from "@/components/atoms/typography/Typography";
-import Text from "@/components/atoms/text/Text";
-import {IPagesHeadingProps} from "./PagesHeading.types"
+import {IPagesHeadingProps} from "./PagesHeading.types.ts"
+import Typography from "../../atoms/typography/Typography.tsx";
+import Text from "../../atoms/text/Text.tsx";
 const PagesHeading:FC<IPagesHeadingProps> = ({backgroundImg, name, subscribe}) => {
     const headingBackground = {
         backgroundImage: `url(${backgroundImg||'https://i.imgur.com/FaujHK3.png'})`,

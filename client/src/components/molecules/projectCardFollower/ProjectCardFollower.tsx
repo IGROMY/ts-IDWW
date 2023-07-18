@@ -1,15 +1,15 @@
-import React, {FC} from 'react';
-import {IProjectCardFollowerProps} from './ProjectCardFollower.types'
+import {FC} from 'react';
+import {IProjectCardFollowerProps} from './ProjectCardFollower.types.ts'
 import styles from './ProjectCardFollower.module.scss'
-import {ReactSVG} from "react-svg";
-import Text from "../../atoms/text/Text";
-import Typography from "../../atoms/typography/Typography";
-import Image from "next/image";
+import linkIcon from "../../../assets/icons/linkIcon.svg";
+import Text from "../../atoms/text/Text.tsx";
+import Typography from "../../atoms/typography/Typography.tsx";
+import SVG from "react-inlinesvg";
 const ProjectCardFollower:FC<IProjectCardFollowerProps> = ({imageUrl, name, href}) => {
     return (
         <div className={styles.container}>
             <div>
-                <Image
+                <img
                     src={imageUrl}
                     alt='img'
                 />
@@ -22,7 +22,7 @@ const ProjectCardFollower:FC<IProjectCardFollowerProps> = ({imageUrl, name, href
                             Decor / Architecture
                         </Text>
                     </div>
-                    <a href={href}><ReactSVG src='/assets/icons/\linkIcon'/></a>
+                    <a href={href}><SVG src={linkIcon}/></a>
                 </div>
             </div>
 

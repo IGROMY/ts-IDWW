@@ -3,7 +3,7 @@ import styles from './AboutPage.module.scss'
 import Paragraph from "../../atoms/paragraph/Paragraph.jsx";
 import ContactUs from "../../molecules/contactUs/ContactUs.jsx";
 import CardPeopleAbout from "../../molecules/cardPeopleAbout/CardPeopleAbout";
-import usePeopleStore from "../../../store/usePeopleStore.js";
+import usePeopleStore from "../../../store/usePeopleStore.ts";
 import Typography from "../../atoms/typography/Typography.jsx";
 import photo1 from "../../../assets/images/Human1.png";
 import photo2 from "../../../assets/images/Human2.png";
@@ -35,7 +35,6 @@ const AboutPage = () => {
 
                     <Typography variant='h2'>
                         I like an interior that defies labeling.
-                        {/* eslint-disable-next-line react/no-unescaped-entities */}
                         I don't really want someone to walk into a room and know that
                         I did it
                     </Typography>
@@ -53,8 +52,7 @@ const AboutPage = () => {
                     variant="lastPhoto"
                     header='What We do'
                     childrenText=
-                        "It is a long established fact that a reader will be distracted by the of readable content of a page
-                        when looking at its layouts the points of using that it has a more-or-less normal."
+                        "It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layouts the points of using that it has a more-or-less normal."
                     textButton='Our Concept'
                     photo={whatWeDo}
                 />
@@ -62,9 +60,7 @@ const AboutPage = () => {
                     variant='firstPhoto'
                     header="The End Result"
                     childrenText=
-                        'It is a long established fact that a reader will be distracted by the of readable content of a page
-                          when lookings at its layouts the points of using
-                          that it has a more-or-less normal'
+                        'It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using that it has a more-or-less normal'
                     textButton='Our Portfolio'
                     photo={endResult}/>
             </div>

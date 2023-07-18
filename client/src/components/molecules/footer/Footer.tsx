@@ -4,9 +4,9 @@ import fb from '../../../assets/icons/fb.svg'
 import twitter from '../../../assets/icons/tvit.svg'
 import linkedin from '../../../assets/icons/ln.svg'
 import instagram from '../../../assets/icons/inst.svg'
-import Text from "../../atoms/text/Text";
-import Typography from "../../atoms/typography/Typography";
-import Copyright from "../../atoms/copyright/Copyright";
+import Text from "../../atoms/text/Text.tsx";
+import Typography from "../../atoms/typography/Typography.tsx";
+import Copyright from "../../atoms/copyright/Copyright.tsx";
 import SVG from "react-inlinesvg"
 import {FC} from "react";
 

@@ -1,5 +1,3 @@
-import {ReactNode} from "react";
-
 export interface ITextAreaProps {
     onChange?: () => void;
     errorMessage?: string;

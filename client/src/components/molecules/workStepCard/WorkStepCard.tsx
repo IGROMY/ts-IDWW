@@ -1,11 +1,10 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import styles from './WorkStepCard.module.scss'
 import cn from "classnames";
-import {ReactSVG} from "react-svg"
 import Typography from "../../atoms/typography/Typography";
 import Text from "../../atoms/text/Text";
-import Image from "next/image";
 import {IWorkStepCardProps} from './WorkStepCard.types'
+import SVG from "react-inlinesvg";
 
 const WorkStepCard:FC<IWorkStepCardProps> = ({heading, text, stepNumber, variant, photoUrl, iconUrl}) => {
 
@@ -16,11 +15,11 @@ const WorkStepCard:FC<IWorkStepCardProps> = ({heading, text, stepNumber, variant
     return (
         <div className={classes}>
             <div className={styles["imgBox"]}>
-                <Image className={styles["photoStyle"]} src={photoUrl} width='453' height='485' alt={''}/>
+                <img className={styles["photoStyle"]} src={photoUrl} width='453' height='485' alt={''}/>
             </div>
             <div className={styles["informationWrapper"]}>
                 <div className={styles["stepWrapper"]}>
-                    <ReactSVG src={iconUrl}/>
+                    <SVG src={iconUrl}/>
                     <Typography variant='altH1'>
                         {stepNumber}
                     </Typography>

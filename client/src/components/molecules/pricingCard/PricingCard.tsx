@@ -1,14 +1,16 @@
-import React from 'react';
 import styles from './PricingCard.module.scss'
 import cn from "classnames";
-import Typography from "../../atoms/typography/Typography.jsx";
+import Typography from "../../atoms/typography/Typography.tsx";
 import SVG from "react-inlinesvg";
 import line from '../../../assets/icons/priceLine.svg'
-import Text from "../../atoms/text/Text.jsx";
-import Button from "../../atoms/button/Button.jsx";
+import Text from "../../atoms/text/Text.tsx";
+import Button from "../../atoms/button/Button.tsx";
 import {useNavigate} from "react-router-dom";
 import {paths} from "../../../routes/constants/paths.ts";
-const PricingCard = ({variant, fullName, cost, offer1, offer2, offer3, offer4, offer5}) => {
+import {IPricingCardProps} from "./PricingCard.types.ts";
+import {FC} from "react";
+
+const PricingCard:FC<IPricingCardProps> = ({variant, fullName, cost, offer1, offer2, offer3, offer4, offer5}) => {
 
     const classes = cn({
         [styles.primary]: variant==="primary",
@@ -66,7 +68,7 @@ const PricingCard = ({variant, fullName, cost, offer1, offer2, offer3, offer4, o
                     variant='primary'
                     text='Get started'
                     onClick={handleServiceLink}
-                    type='link'
+                    type='button'
                 />
             </div>
         </div>

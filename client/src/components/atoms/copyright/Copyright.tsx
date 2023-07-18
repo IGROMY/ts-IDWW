@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Copyright.module.scss'
 import Text from "../../atoms/text/Text";
 const Copyright = () => {

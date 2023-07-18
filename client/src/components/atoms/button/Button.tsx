@@ -1,10 +1,9 @@
 import {FC} from 'react';
 import styles from './Button.module.scss';
 import cn from 'classnames';
-import { ReactSVG } from 'react-svg';
-import Image from 'next/image';
 import { IButtonProps } from './Button.types';
-
+import SVG from "react-inlinesvg";
+import buttonIcon from '../../../assets/icons/buttonArrow.svg'
 const Button: FC<IButtonProps> = ({ text, disabled, variant, type, onClick }) => {
     const classes = cn({
         [styles.primary]: variant === 'primary',
@@ -15,7 +14,7 @@ const Button: FC<IButtonProps> = ({ text, disabled, variant, type, onClick }) =>
     return (
         <button onClick={onClick} disabled={disabled} className={classes} type={type}>
             {text}
-        <ReactSVG className={styles.icon} src="/assets/icons/buttonArrow.svg"/>
+        <SVG className={styles.icon} src={buttonIcon}/>
         </button>
     );
 };

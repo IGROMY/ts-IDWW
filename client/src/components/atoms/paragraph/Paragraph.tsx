@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Paragraph.module.scss'
 import cn from 'classnames'
 import {FC} from 'react';

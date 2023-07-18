@@ -1,10 +1,9 @@
-import React from 'react';
 import styles from "./TextArea.module.scss"
 import Text from "../text/Text";
 import {FC} from 'react';
 import {ITextAreaProps} from './TextArea.types'
 
-const TextArea: FC<ITextAreaProps> = ({value, onChange, errorMessage, register, required, name, label}) => {
+const TextArea: FC<ITextAreaProps> = ({value, onChange, name, label}) => {
     return (
         <div className={styles.container}>
             <label htmlFor={name} className={styles.label}>

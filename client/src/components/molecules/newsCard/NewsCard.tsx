@@ -1,10 +1,10 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import styles from './NewsCard.module.scss';
-import Typography from "../../atoms/typography/Typography.jsx";
-import Text from "../../atoms/text/Text.jsx";
+import Typography from "../../atoms/typography/Typography.tsx";
+import Text from "../../atoms/text/Text.tsx";
 import linkIcon from '../../../assets/icons/linkIcon.svg'
-import {ReactSVG} from "react-svg"
-import {INewsCardProps} from "./NewsCard.types"
+import SVG from "react-inlinesvg"
+import {INewsCardProps} from "./NewsCard.types.ts"
 
 const NewsCard:FC<INewsCardProps> = ({title, date, href, category,image}) => {
 
@@ -34,7 +34,7 @@ const NewsCard:FC<INewsCardProps> = ({title, date, href, category,image}) => {
                 </div>
                 <div>
                     <a href={href}>
-                        <ReactSVG src={linkIcon}/>
+                        <SVG src={linkIcon}/>
                     </a>
                 </div>
             </div>

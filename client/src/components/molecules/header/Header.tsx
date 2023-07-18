@@ -1,8 +1,7 @@
-
 import styles from './Header.module.scss'
 import logo from '../../../assets/icons/Logo.svg'
 import search from '../../../assets/icons/search.svg'
-import Text from "../../atoms/text/Text";
+import Text from "../../atoms/text/Text.tsx";
 import SVG from "react-inlinesvg";
 import {FC} from "react";
 

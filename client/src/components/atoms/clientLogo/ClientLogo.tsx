@@ -1,15 +1,19 @@
-import React from 'react';
-import { ReactSVG } from 'react-svg';
 import styles from './ClientLogo.module.scss'
+import logo1 from  '../../../assets/icons/01modernHome.svg'
+import logo2 from  '../../../assets/icons/02styleVintageInterior.svg'
+import logo3 from  '../../../assets/icons/03brand.svg'
+import logo4 from  '../../../assets/icons/04natureHome.svg'
+import logo5 from  '../../../assets/icons/05classicDesignStudio.svg'
+import SVG from "react-inlinesvg";
 
 const ClientLogo = () => {
     return (
         <div className={styles.container}>
-            <ReactSVG src="/assets/icons/01modernHome.svg"/>
-            <ReactSVG src="/assets/icons/02styleVintageInterior.svg"/>
-            <ReactSVG src="/assets/icons/03brand.svg"/>
-            <ReactSVG src="/assets/icons/04natureHome.svg"/>
-            <ReactSVG src="/assets/icons/05classicDesignStudio.svg"/>
+            <SVG src={logo1}/>
+            <SVG src={logo2}/>
+            <SVG src={logo3}/>
+            <SVG src={logo4}/>
+            <SVG src={logo5}/>
         </div>
     );
 };
