@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "paths": {
+      "*": ["src/*"]
+    },
+    "plugins": [
+      {
+        "name": "tsconfig-paths",
+        "baseUrl": "./",
+        "paths": ["src/*"]
+      }
+    ]
+  }
+}
