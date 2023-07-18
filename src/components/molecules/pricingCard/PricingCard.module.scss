@@ -1,0 +1,45 @@
+@import "src/styles/global";
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 368px;
+  height: 722px;
+  background: $wrapper-color;
+  border-radius: 33px;
+  padding-top: 4em;
+  .priceBox {
+    height: 110px;
+    margin-top: 2em;
+  }
+  .offerList {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 4em;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    button {
+      width: 219px;
+      height: 75px;
+    }
+  }
+}
+.primary {
+  @extend .container;
+  @extend .priceBox;
+  @extend .offerList;
+}
+.secondary {
+  @extend .container;
+  @extend .priceBox;
+  @extend .offerList;
+}

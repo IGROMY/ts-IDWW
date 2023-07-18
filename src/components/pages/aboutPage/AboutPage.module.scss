@@ -1,0 +1,62 @@
+@import "src/styles/global";
+.container {
+  @include container;
+  .quote {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    height: 435px;
+    justify-content: space-between;
+    align-self: center;
+    margin-top: 10em;
+    .contentWrapper {
+      display: flex;
+      flex-direction: column;
+      width: 751px;
+      height: 602px;
+      gap: 4em;
+    }
+  }
+  .containerProgress {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 1100px;
+  }
+  .peopleAboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 800px;
+    background-color: #F4F0EC;
+    margin-top: 15em;
+    gap: 2em;
+    .peopleAboutUsHeading {
+      align-self: center;
+      width: 547px;
+      height: 126px;
+    }
+    .cardPeople {
+      width: 800px;
+      height: 433px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1em;
+      .photo {
+        height: 433px;
+        width: 283px;
+        .img {
+          max-width: 100%;
+          max-height: 100%;
+          border-radius: 30px;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+}

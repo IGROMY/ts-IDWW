@@ -1,0 +1,28 @@
+@import "src/styles/global";
+.homePage {
+  @include container;
+  .preview {
+    width: 100%;
+    height: 758px;
+    border-radius: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 8em;
+    .intro {
+      width: 434px;
+      height: 342px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: start;
+      gap: 1.5em;
+      padding-left: 2.25em;
+      button {
+        width: 220px;
+        height: 75px;
+      }
+    }
+  }
+}

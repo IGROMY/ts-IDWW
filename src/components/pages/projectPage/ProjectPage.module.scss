@@ -1,0 +1,29 @@
+@import "src/styles/global";
+.container {
+  height: 3479px;
+  .projects {
+    @include container;
+    gap: 2.5em;
+    .categories {
+
+    }
+    .project {
+      display: flex;
+      width: 100%;
+      height: 3200px;
+      flex-direction: column;
+     // justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5em;
+
+    }
+    .pagination {
+      display: flex;
+      width: 268px;
+      height: 52px;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "src/styles/global";
+.container {
+  width: 398px;
+  height: 391px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  border-radius: 30px;
+  &:hover {
+    background-color: $wrapper-color;
+  }
+  .textWrapper {
+    width: 358px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+  }
+  path {
+    stroke: rgba(205, 162, 116, 1);
+  };
+  .linkBox {
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
+}

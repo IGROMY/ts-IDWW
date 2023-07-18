@@ -1,0 +1,69 @@
+@import "src/styles/global";
+.container {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   gap: 4em;
+
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 437px;
+    gap: 2.5em;
+    .detail {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 500px;
+      height: 379px;
+      border-radius: 70px;
+      background-color: #F4F0EC;
+      .frame {
+        display: flex;
+        width: 332px;
+        height: 269px;
+        gap: 3em;
+        .header {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1.7em;
+        }
+        .description {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1.7em;
+        }
+      }
+
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1em;
+      width: 658px;
+      .textWrapper {
+        text-align:start;
+      }
+    }
+  }
+
+  .image {
+
+    width: 1200px;
+    height: 799px;
+    .img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 70px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

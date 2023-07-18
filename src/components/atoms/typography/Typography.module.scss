@@ -1,0 +1,32 @@
+@import "src/styles/global";
+.h1 {
+  @include heading(50px)
+}
+
+.h2 {
+  @include heading(35px)
+}
+
+.h3 {
+  @include heading(25px)
+}
+
+.h4 {
+  @include heading(22px)
+}
+
+.h5 {
+  @include heading(20px)
+}
+
+.h6 {
+  @include heading(18px)
+}
+
+.displayText {
+  @include heading(85px)
+}
+
+.altH1 {
+  @include heading(65px)
+}

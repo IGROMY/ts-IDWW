@@ -1,0 +1,18 @@
+.container {
+  width: 1920px;
+  height: 457px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: -22.5em;
+  .nameWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 503px;
+    height: 178px;
+    background: #FFFFFF;
+    border-radius: 37px 37px 0 0;
+  }
+}
