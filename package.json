@@ -8,6 +8,7 @@
     "start:client": "cd client && npm run dev"
   },
   "dependencies": {
+    "@types/react-router-dom": "^5.3.3",
     "concurrently": "^8.2.0"
   }
 }

@@ -4,7 +4,7 @@ import Typography from "../../atoms/typography/Typography.jsx";
 import Text from "../../atoms/text/Text.jsx";
 import Input from "../../atoms/input/Input.jsx";
 import Button from "../../atoms/button/Button.jsx";
-import useRegistration from "../../../store/useRegistration.js";
+import useRegistration from "../../../store/useRegistration.ts";
 const Registration = () => {
     const {email, password, setField, register, name, username} = useRegistration()
     const handleChange = (e) => {

@@ -1,9 +1,10 @@
 export interface IUser {
-    _id: string,
-    name: string,
-    userName: string,
+    id?: string,
+    photo?: string,
+    role?: string,
     email: string,
-    password: string
+    password: string,
+    refreshToken?:string|null,
 }
 export interface ICredentials {
     email: string,

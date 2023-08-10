@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import styles from './BlogPage.module.scss'
 import ArticlesAndNews from "../../organisms/articlesAndNews/ArticlesAndNews.jsx";
-import useBlogArticles from "../../../store/useBlogArticles.js";
+import useBlogArticles from "../../../store/useBlogArticles.ts";
 import LatestArticle from "../../organisms/latestArticle/LatestArticle.jsx";
 import PagesHeading from "../../molecules/pagesHeading/PagesHeading.jsx";
 import blogBg from "../../../assets/images/Photoblog.png";

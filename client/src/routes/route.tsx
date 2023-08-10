@@ -1,30 +1,27 @@
 import { BrowserRouter as Router, Route, Routes, Outlet, useNavigate } from 'react-router-dom';
-import HomePage from "../components/pages/homePage/HomePage.jsx";
-import ArticleView from "../components/organisms/articleView/ArticleView.jsx";
-import AboutPage from "../components/pages/aboutPage/AboutPage.jsx";
-import BlogDetailsPage from "../components/pages/blogDetailsPage/BlogDetailsPage.jsx";
-import BlogPage from "../components/pages/blogPage/BlogPage.jsx";
-import ChangelogPage from "../components/pages/changelogPage/ChangelogPage.jsx";
-import ContactUsPage from "../components/pages/contactUsPage/ContactUsPage.jsx";
-import FAQPage from "../components/pages/faqPage/FAQPage.jsx";
-import LicencePage from "../components/pages/licencePage/LicencePage.jsx";
-import Page404 from "../components/pages/page404/Page404.jsx";
-import RegistrationPage from "../components/pages/registrationPage/RegistrationPage.jsx";
-import PricingPage from "../components/pages/pricingPage/PricingPage.jsx";
-import ProjectDetailsPage from "../components/pages/projectDetailsPage/ProjectDetailsPage.jsx";
-import ProjectPage from "../components/pages/projectPage/ProjectPage.jsx";
-import ServiceSinglePage from "../components/pages/serviceSinglePage/ServiceSinglePage.jsx";
-import ServicesPage from "../components/pages/servicesPage/ServicesPage.jsx";
-import TeamPage from "../components/pages/teamPage/TeamPage.jsx";
-import TeamSinglePage from "../components/pages/teamSinglePage/TeamSinglePage.jsx";
-import {paths} from "./constants/paths.ts";
-import LoginPage from "../components/pages/loginPage/LoginPage.jsx";
-
-
-
+// import HomePage from "../components/pages/homePage/HomePage.jsx";
+// import ArticleView from "../components/organisms/articleView/ArticleView.jsx";
+// import AboutPage from "../components/pages/aboutPage/AboutPage.jsx";
+// import BlogDetailsPage from "../components/pages/blogDetailsPage/BlogDetailsPage.jsx";
+// import BlogPage from "../components/pages/blogPage/BlogPage.jsx";
+// import ChangelogPage from "../components/pages/changelogPage/ChangelogPage.jsx";
+// import ContactUsPage from "../components/pages/contactUsPage/ContactUsPage.jsx";
+// import FAQPage from "../components/pages/faqPage/FAQPage.jsx";
+// import LicencePage from "../components/pages/licencePage/LicencePage.jsx";
+// import Page404 from "../components/pages/page404/Page404.jsx";
+// import RegistrationPage from "../components/pages/registrationPage/RegistrationPage.jsx";
+// import PricingPage from "../components/pages/pricingPage/PricingPage.jsx";
+// import ProjectDetailsPage from "../components/pages/projectDetailsPage/ProjectDetailsPage.jsx";
+// import ProjectPage from "../components/pages/projectPage/ProjectPage.jsx";
+// import ServiceSinglePage from "../components/pages/serviceSinglePage/ServiceSinglePage.jsx";
+// import ServicesPage from "../components/pages/servicesPage/ServicesPage.jsx";
+// import TeamPage from "../components/pages/teamPage/TeamPage.jsx";
+// import TeamSinglePage from "../components/pages/teamSinglePage/TeamSinglePage.jsx";
+// import {paths} from "./constants/paths.ts";
+// import LoginPage from "../components/pages/loginPage/LoginPage.jsx";
 
 const AppRoutes = () => {
-        const navigate = useNavigate()
+        // const navigate = useNavigate()
     return (
         <Routes>
             <Route path={paths.HOME} element={<HomePage/>} />
