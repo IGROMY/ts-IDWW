@@ -8,8 +8,6 @@
     "start:client": "cd client && npm run dev"
   },
   "dependencies": {
-    "@types/react-svg": "^5.0.0",
-    "concurrently": "^8.2.0",
-    "react-svg": "^16.1.18"
+    "concurrently": "^8.2.0"
   }
 }
