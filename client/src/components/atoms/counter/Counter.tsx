@@ -1,5 +1,5 @@
 import styles from './Counter.module.scss';
-import line from '../../../app/assets/icons/Line.svg'
+import line from '../../../assets/icons/Line.svg'
 import Text from "../text/Text";
 import SVG from "react-inlinesvg";
 

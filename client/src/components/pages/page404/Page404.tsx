@@ -1,0 +1,39 @@
+import {FC} from 'react';
+import styles from './Page404.module.scss'
+import img404 from '../../../assets/images/notFoundPage.jpg'
+import Typography from "../../atoms/typography/Typography.tsx";
+import Button from "../../atoms/button/Button.tsx";
+import {useNavigate} from "react-router-dom";
+import {paths} from "../../../routes/constants/paths.ts";
+
+const Page404: FC = () => {
+    const navigate = useNavigate()
+    const handleHomeLink = () =>{
+        navigate(paths.HOME)
+    }
+    return (
+        <div className={styles.container404}>
+            <div className={styles.containerNotFound}>
+                <div className={styles.containerContent}>
+                    <span className={styles.headingText}>404</span>
+                    <Typography  variant='h2'>
+                        We are sorry, but the page
+                        you requested was not found
+                    </Typography>
+                </div>
+
+                <div className={styles.containerButton} >
+                    <Button variant='primary' text='Back To Home' onClick={handleHomeLink}/>
+                </div>
+
+            </div>
+
+            <div className={styles.imgContainer}>
+                <img className={styles.img} alt='img' src={img404}/>
+            </div>
+
+        </div>
+    );
+};
+
+export default Page404;

@@ -13,6 +13,7 @@ import userRouter from './user/user.controller';
 import articleRouter from './article/article.controller';
 import employeeRouter from './employee/employee.controller';
 import workInfoRouter from './workInfo/workInfo.controller';
+import newsRouter from './news/news.controller';
 
 app.use(express.json());
 app.use(cors());
@@ -21,7 +22,7 @@ app.use('/users', userRouter);
 app.use('/article', articleRouter);
 app.use('/work-info', workInfoRouter);
 app.use('/employee', employeeRouter);
-
+app.use('/news', newsRouter);
 app.use((err, req, res, next) => {
     if (res.headersSent) {
         return next(err);

@@ -6,7 +6,9 @@ const router = express.Router();
 
 router.post('/register', async (req: Request, res: Response) => {
     try {
-        const { email, password, role, photo } = req.body;
+        const { email, password } = req.body;
+        const role = "USER"
+        const photo = "https://campussafetyconference.com/wp-content/uploads/2020/08/iStock-476085198.jpg"
         const newUser = await authService.register(email, password, role, photo);
         res.json(newUser);
     } catch (err) {

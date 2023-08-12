@@ -1,28 +1,28 @@
 import { BrowserRouter as Router, Route, Routes, Outlet, useNavigate } from 'react-router-dom';
-// import HomePage from "../components/pages/homePage/HomePage.jsx";
-// import ArticleView from "../components/organisms/articleView/ArticleView.jsx";
-// import AboutPage from "../components/pages/aboutPage/AboutPage.jsx";
-// import BlogDetailsPage from "../components/pages/blogDetailsPage/BlogDetailsPage.jsx";
-// import BlogPage from "../components/pages/blogPage/BlogPage.jsx";
-// import ChangelogPage from "../components/pages/changelogPage/ChangelogPage.jsx";
-// import ContactUsPage from "../components/pages/contactUsPage/ContactUsPage.jsx";
-// import FAQPage from "../components/pages/faqPage/FAQPage.jsx";
-// import LicencePage from "../components/pages/licencePage/LicencePage.jsx";
-// import Page404 from "../components/pages/page404/Page404.jsx";
-// import RegistrationPage from "../components/pages/registrationPage/RegistrationPage.jsx";
-// import PricingPage from "../components/pages/pricingPage/PricingPage.jsx";
-// import ProjectDetailsPage from "../components/pages/projectDetailsPage/ProjectDetailsPage.jsx";
-// import ProjectPage from "../components/pages/projectPage/ProjectPage.jsx";
-// import ServiceSinglePage from "../components/pages/serviceSinglePage/ServiceSinglePage.jsx";
-// import ServicesPage from "../components/pages/servicesPage/ServicesPage.jsx";
-// import TeamPage from "../components/pages/teamPage/TeamPage.jsx";
-// import TeamSinglePage from "../components/pages/teamSinglePage/TeamSinglePage.jsx";
-// import {paths} from "./constants/paths.ts";
-// import LoginPage from "../components/pages/loginPage/LoginPage.jsx";
+import HomePage from "../components/pages/homePage/HomePage.js";
+import ArticleView from "../components/organisms/articleView/ArticleView.js";
+import AboutPage from "../components/pages/aboutPage/AboutPage.js";
+import BlogDetailsPage from "../components/pages/blogDetailsPage/BlogDetailsPage.js";
+import BlogPage from "../components/pages/blogPage/BlogPage.js";
+import ChangelogPage from "../components/pages/changelogPage/ChangelogPage.js";
+import ContactUsPage from "../components/pages/contactUsPage/ContactUsPage.js";
+import FAQPage from "../components/pages/faqPage/FAQPage.js";
+import LicencePage from "../components/pages/licencePage/LicencePage.js";
+import Page404 from "../components/pages/page404/Page404.js";
+import RegistrationPage from "../components/pages/registrationPage/RegistrationPage.js";
+import PricingPage from "../components/pages/pricingPage/PricingPage.js";
+import ProjectDetailsPage from "../components/pages/projectDetailsPage/ProjectDetailsPage.js";
+import ProjectPage from "../components/pages/projectPage/ProjectPage.js";
+import ServiceSinglePage from "../components/pages/serviceSinglePage/ServiceSinglePage.js";
+import ServicesPage from "../components/pages/servicesPage/ServicesPage.js";
+import TeamPage from "../components/pages/teamPage/TeamPage.js";
+import TeamSinglePage from "../components/pages/teamSinglePage/TeamSinglePage.js";
+import { paths } from "./constants/paths.ts";
+import LoginPage from "../components/pages/loginPage/LoginPage.js";
 
 const AppRoutes = () => {
-        // const navigate = useNavigate()
     return (
+        <Router>
         <Routes>
             <Route path={paths.HOME} element={<HomePage/>} />
             <Route path={paths.CREATE_ARTICLE} element={<ArticleView/>}/>
@@ -45,6 +45,7 @@ const AppRoutes = () => {
             <Route path={paths.TEAM_SINGLE} element={<TeamSinglePage/>}/>
             <Route path='*' element={ <Page404/>}/>
         </Routes>
+        </Router>
     )
 }
 

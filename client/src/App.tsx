@@ -1,11 +1,12 @@
 import './App.css'
 import Layout from "./components/templates/layout/Layout.tsx";
+import AppRoutes from "./routes/route";
 function App() {
 
   return (
     <>
         <Layout>
-            <div>1</div>
+           <AppRoutes/>
         </Layout>
     </>
   )
