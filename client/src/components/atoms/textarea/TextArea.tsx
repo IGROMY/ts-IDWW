@@ -1,7 +1,7 @@
 import styles from "./TextArea.module.scss"
 import Text from "../text/Text";
 import {FC} from 'react';
-import {ITextAreaProps} from './TextArea.types'
+import {ITextAreaProps} from './TextArea.types.ts'
 
 const TextArea: FC<ITextAreaProps> = ({value, onChange, name, label}) => {
     return (
