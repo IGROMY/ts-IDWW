@@ -1,11 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import TextArea from "./TextArea.tsx";
-
-
+import Text from "./Text.tsx";
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-    title: 'Example/TextArea',
-    component: TextArea,
+    title: 'Example/Text',
+    component: Text,
     parameters: {
         // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
         layout: 'centered',
@@ -13,15 +11,25 @@ const meta = {
     // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
     tags: ['autodocs'],
     // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-} satisfies Meta<typeof TextArea>;
+} satisfies Meta<typeof Text>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
-export const name: Story = {
+export const normal: Story = {
     args: {
-        label: 'TextArea' ,
-        name: "TextArea",
+        children: 'Text',
+        variant: "normal",
     },
 };
-
-// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
+export const bold: Story = {
+    args: {
+        children: 'Text',
+        variant: "bold",
+    },
+};
+export const italic: Story = {
+    args: {
+        children: 'Text',
+        variant: "italic",
+    },
+};

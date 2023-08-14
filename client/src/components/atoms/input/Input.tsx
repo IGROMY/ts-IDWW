@@ -1,7 +1,7 @@
-import styles from "./input.module.scss"
-import Text from "../text/Text.jsx";
+import styles from "./Input.module.scss"
+import Text from "../text/Text.tsx";
 import {FC} from 'react'
-import { IInputProps } from './Input.types'
+import {IInputProps} from './Input.types'
 
 const Input: FC<IInputProps> = ({ type, value, onChange, maxLength, minLength, name, label, placeholder}) => {
     return (
