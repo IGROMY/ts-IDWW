@@ -4,7 +4,7 @@ import { WorkInfoService } from './workInfo.service';
 const workInfoService = new WorkInfoService();
 const router = express.Router();
 
-router.post('/work-step-info', async (req: Request, res: Response) => {
+router.post('/', async (req: Request, res: Response) => {
     try {
         const { heading, text, stepNumber } = req.body;
 
@@ -19,7 +19,7 @@ router.post('/work-step-info', async (req: Request, res: Response) => {
     }
 });
 
-router.get('/work-step-info', async (_req: Request, res: Response) => {
+router.get('', async (_req: Request, res: Response) => {
     try {
         const workStepInfos = await workInfoService.getAllWorkInfos();
         res.json(workStepInfos);
@@ -28,7 +28,7 @@ router.get('/work-step-info', async (_req: Request, res: Response) => {
     }
 });
 
-router.get('/work-step-info/:id', async (req: Request, res: Response) => {
+router.get('/:id', async (req: Request, res: Response) => {
     try {
         const workStepInfo = await workInfoService.getWorkInfo(req.params.id);
 
@@ -42,7 +42,7 @@ router.get('/work-step-info/:id', async (req: Request, res: Response) => {
     }
 });
 
-router.put('/work-step-info/:id', async (req: Request, res: Response) => {
+router.put('/:id', async (req: Request, res: Response) => {
     try {
         const { heading, text, stepNumber } = req.body;
 
@@ -62,7 +62,7 @@ router.put('/work-step-info/:id', async (req: Request, res: Response) => {
     }
 });
 
-router.delete('/work-step-info/:id', async (req: Request, res: Response) => {
+router.delete('/:id', async (req: Request, res: Response) => {
     try {
         const deletedWorkStepInfo = await workInfoService.deleteWorkInfo(req.params.id);
 
