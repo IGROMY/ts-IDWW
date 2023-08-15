@@ -14,7 +14,7 @@ const createEmployeeValidationRules = [
     body('email').notEmpty().withMessage('Email is required'),
 ];
 
-router.post('/employee', createEmployeeValidationRules, async (req: Request, res: Response) => {
+router.post('/', createEmployeeValidationRules, async (req: Request, res: Response) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
         throw createError(400, 'Validation error', { errors: errors.array() });
@@ -25,12 +25,12 @@ router.post('/employee', createEmployeeValidationRules, async (req: Request, res
     res.json(newEmployee);
 });
 
-router.get('/employee', async (_req: Request, res: Response) => {
+router.get('/', async (_req: Request, res: Response) => {
     const employees = await employeeService.getAllEmployees();
     res.json(employees);
 });
 
-router.get('/employee/:id', async (req: Request, res: Response) => {
+router.get('/:id', async (req: Request, res: Response) => {
     const { id } = req.params;
     const employee = await employeeService.getEmployee(id);
     if (!employee) {
@@ -40,7 +40,7 @@ router.get('/employee/:id', async (req: Request, res: Response) => {
 });
 
 // Handle update employee request
-router.put('/employee/:id', createEmployeeValidationRules, async (req: Request, res: Response) => {
+router.put('/:id', createEmployeeValidationRules, async (req: Request, res: Response) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
         throw createError(400, 'Validation error', { errors: errors.array() });
@@ -55,7 +55,7 @@ router.put('/employee/:id', createEmployeeValidationRules, async (req: Request, 
     res.json(updatedEmployee);
 });
 
-router.delete('/employee/:id', async (req: Request, res: Response) => {
+router.delete('/:id', async (req: Request, res: Response) => {
     const { id } = req.params;
     const deletedEmployee = await employeeService.deleteEmployee(id);
     if (!deletedEmployee) {
