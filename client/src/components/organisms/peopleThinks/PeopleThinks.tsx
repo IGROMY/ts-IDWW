@@ -1,10 +1,10 @@
-import {FC} from 'react';
 import styles from "./PeopleThinks.module.scss";
+import Typography from "../../atoms/typography/Typography";
+import PeopleReviewCard from "../../molecules/peopleReviewCard/PeopleReviewCard";
 import avatar1 from "../../../assets/images/Imageperson1.png";
 import avatar2 from "../../../assets/images/Imageperson2.png";
 import avatar3 from "../../../assets/images/Imageperson3.png";
-import Typography from "../../atoms/typography/Typography";
-import PeopleReviewCard from "../../molecules/peopleReviewCard/PeopleReviewCard";
+import {FC} from "react";
 
 const PeopleThinks: FC = () => {
     return (

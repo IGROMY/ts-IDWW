@@ -1,5 +1,5 @@
-import { INewsCardInfo } from "../../../models/newsCardInfo";
+import {INewsCardInfo} from "../../../models/newsCardInfo";
 
 export interface ILatestArticleProps {
-    newsCardInfo : INewsCardInfo[]
+    newsCardInfo: INewsCardInfo[];
 }

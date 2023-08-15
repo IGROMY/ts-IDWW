@@ -1,17 +1,17 @@
-import {FC} from 'react';
-import Typography from "../../atoms/typography/Typography.tsx";
-import Text from "../../atoms/text/Text.tsx";
-import NewsCard from "../../molecules/newsCard/NewsCard.tsx";
+import  {FC} from 'react';
 import styles from "./ArticlesAndNews.module.scss";
-import {IArticleAndNewsProps} from "./ArticleAndNews.types";
+import NewsCard from "../../molecules/newsCard/NewsCard.tsx";
 import newsImg1 from "../../../assets/images/Photonews1.png";
 import newsImg2 from "../../../assets/images/Photonews2.png";
 import newsImg3 from "../../../assets/images/Photonews3.png";
 import newsImg4 from "../../../assets/images/Photonews4.png";
 import newsImg5 from "../../../assets/images/Photonews5.png";
 import newsImg6 from "../../../assets/images/Photonews6.png";
+import Typography from "../../atoms/typography/Typography.tsx";
+import Text from "../../atoms/text/Text.tsx";
+import {IArticleAndNewsProps} from "./ArticleAndNews.types";
 
-const ArticlesAndNews: FC<IArticleAndNewsProps> = ({slice, newsCardInfo}) => {
+const ArticlesAndNews:FC<IArticleAndNewsProps> = ({slice, newsCardInfo}) => {
     const imagesArray = [newsImg1, newsImg2, newsImg3, newsImg4, newsImg5, newsImg6]
     const fullNewsCardInfo = newsCardInfo.map((item, index) => (
         {

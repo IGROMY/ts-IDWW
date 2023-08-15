@@ -1,12 +1,12 @@
 import {FC} from 'react';
 import styles from './ServicesPage.module.scss'
-import PagesHeading from "../../molecules/pagesHeading/PagesHeading.tsx";
+import PagesHeading from "../../molecules/pagesHeading/PagesHeading";
 import servicesBg from "../../../assets/images/ImageServicesBg.png";
-import WannaJoinWrapper from "../../molecules/wannaJoinWrapper/wannaJoinWrapper.tsx";
+import WannaJoinWrapper from "../../molecules/wannaJoinWrapper/wannaJoinWrapper";
 import useWorksStore from "../../../store/useWorksStore.ts";
-import ReadMoreCard from "../../molecules/readMoreCard/ReadMoreCard.tsx";
+import ReadMoreCard from "../../molecules/readMoreCard/ReadMoreCard.jsx";
 import HowWeWork from "../../organisms/howWeWork/HowWeWork.tsx";
-const ServicesPage: FC = () => {
+const ServicesPage:FC = () => {
     const {workInfo} = useWorksStore()
     return (
         <div className={styles.container}>

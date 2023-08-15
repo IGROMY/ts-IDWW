@@ -1,8 +1,8 @@
-import {FC} from 'react';
 import styles from "./FollowOurProject.module.scss";
-import Typography from "../../atoms/typography/Typography.tsx";
-import Text from "../../atoms/text/Text.tsx";
-import ProjectCardFollower from "../../molecules/projectCardFollower/ProjectCardFollower.tsx";
+import Typography from "../../atoms/typography/Typography";
+import Text from "../../atoms/text/Text";
+import ProjectCardFollower from "../../molecules/projectCardFollower/ProjectCardFollower";
+import {FC} from "react";
 
 const FollowOurProject: FC = () => {
     return (
@@ -18,24 +18,25 @@ const FollowOurProject: FC = () => {
             </div>
             <div className={styles.projectCardsWrapper}>
                 <ProjectCardFollower
+                    imageUrl='https://ogorodniku.com/uploads/posts/2023-01/1672778979_ogorodniku-com-p-spalnya-minimalizm-v-svetlikh-tonakh-foto-66.jpg'
                     name='Kitchen'
-                    href="/test"
-                    imageUrl=""
+                    href='/project-details'
                 />
                 <ProjectCardFollower
+                    imageUrl='https://ogorodniku.com/uploads/posts/2023-01/1672778979_ogorodniku-com-p-spalnya-minimalizm-v-svetlikh-tonakh-foto-66.jpg'
                     name='Bedroom'
-                    href="/test"
-                    imageUrl=""
+                    href='/project-details'
                 />
                 <ProjectCardFollower
+                    imageUrl='https://ogorodniku.com/uploads/posts/2023-01/1672778979_ogorodniku-com-p-spalnya-minimalizm-v-svetlikh-tonakh-foto-66.jpg'
                     name='Dinning Hall'
-                    href="/test"
-                    imageUrl=""
+                    href='/project-details'
                 />
                 <ProjectCardFollower
                     name='Living Area'
-                    href="/test"
-                    imageUrl=""/>
+                    href='/project-details'
+                    imageUrl='https://ogorodniku.com/uploads/posts/2023-01/1672778979_ogorodniku-com-p-spalnya-minimalizm-v-svetlikh-tonakh-foto-66.jpg'
+                />
             </div>
         </div>
     );

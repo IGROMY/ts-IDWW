@@ -1,13 +1,13 @@
-import {FC} from 'react';
 import styles from './LatestArticle.module.scss'
-import Typography from "../../atoms/typography/Typography.tsx";
+import Typography from "../../atoms/typography/Typography";
+//import useNewsCardStore from "../../../store/useNewsCardStore.ts";
 import latestArticleImg from '../../../assets/images/Photonews6.png'
-import Text from "../../atoms/text/Text.tsx";
+import Text from "../../atoms/text/Text";
 import SVG from "react-inlinesvg";
 import linkIcon from "../../../assets/icons/linkIcon.svg";
+import {FC} from "react";
 import {ILatestArticleProps} from "./LatestArticle.types";
-
-const LatestArticle: FC<ILatestArticleProps> = ({newsCardInfo}) => {
+const LatestArticle:FC<ILatestArticleProps> = ({newsCardInfo}) => {
     const latestImg = {
         backgroundImage: `url(${latestArticleImg})`,
         backgroundRepeat: 'no-repeat',

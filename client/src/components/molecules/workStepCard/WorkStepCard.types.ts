@@ -1,8 +1,8 @@
 export interface IWorkStepCardProps{
     heading: string,
     text: string,
-    stepNumber: number,
+    stepNumber: string,
     variant: 'primary' | 'secondary',
     photoUrl: string,
-    iconUrl: string,
+    iconUrl?: string,
 }

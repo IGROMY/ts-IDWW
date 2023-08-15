@@ -1,6 +1,6 @@
-import {FC} from 'react';
 import styles from "./WorksWrapper.module.scss";
-import ReadMoreCard from "../../molecules/readMoreCard/ReadMoreCard.tsx";
+import ReadMoreCard from "../../molecules/readMoreCard/ReadMoreCard";
+import {FC} from "react";
 
 const WorksWrapper: FC = () => {
     return (

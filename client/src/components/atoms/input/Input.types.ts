@@ -1,8 +1,7 @@
-
 export interface IInputProps {
     type: string;
     value: string;
-    onChange: () => void;
+    onChange: (event:any) => void;
     maxLength?: number;
     minLength?: number;
     name: string;

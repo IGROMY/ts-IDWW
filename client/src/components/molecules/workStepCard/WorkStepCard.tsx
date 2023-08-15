@@ -3,10 +3,10 @@ import styles from './WorkStepCard.module.scss'
 import cn from "classnames";
 import Typography from "../../atoms/typography/Typography";
 import Text from "../../atoms/text/Text";
-import { IWorkStepCardProps } from './WorkStepCard.types'
+import {IWorkStepCardProps} from './WorkStepCard.types'
 import SVG from "react-inlinesvg";
 
-const WorkStepCard:FC<IWorkStepCardProps> = ({heading, text, stepNumber, variant, photoUrl, icon}) => {
+const WorkStepCard:FC<IWorkStepCardProps> = ({heading, text, stepNumber, variant, photoUrl, iconUrl}) => {
 
     const classes = cn({
         [styles.primary]: variant==="primary",
@@ -19,7 +19,7 @@ const WorkStepCard:FC<IWorkStepCardProps> = ({heading, text, stepNumber, variant
             </div>
             <div className={styles["informationWrapper"]}>
                 <div className={styles["stepWrapper"]}>
-                    <SVG src={icon}/>
+                    { iconUrl && <SVG src={iconUrl}/>}
                     <Typography variant='altH1'>
                         {stepNumber}
                     </Typography>

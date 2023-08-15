@@ -1,10 +1,9 @@
 import {FC} from 'react';
 import styles from './ProjectDetailsPage.module.scss'
-import Typography from "../../atoms/typography/Typography.tsx";
-import Text from "../../atoms/text/Text.tsx";
+import Typography from "../../atoms/typography/Typography.jsx";
+import Text from "../../atoms/text/Text.jsx";
 import photo from "../../../assets/images/projectDetails.png"
-
-const ProjectDetailsPage: FC = () => {
+const ProjectDetailsPage:FC = () => {
     return (
         <div className={styles.container}>
             <div className={styles.text}>

@@ -1,9 +1,9 @@
 export interface ITextAreaProps {
-    onChange?: () => void;
+    onChange?: (event:any) => void;
     errorMessage?: string;
     name: string;
     label: string;
     register?: () => void;
-    value?: number;
+    value?: string;
     required?: string;
 }

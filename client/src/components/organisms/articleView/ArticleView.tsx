@@ -1,21 +1,19 @@
-import { FC } from 'react';
-import styles from './ArticleView.module.scss';
-import Text from "../../atoms/text/Text.tsx";
-import Typography from "../../atoms/typography/Typography.tsx";
+import styles from './ArticleView.module.scss'
 import useArticleStore from "../../../store/useArticleStore.ts";
-import Button from "../../atoms/button/Button.tsx";
-import Input from "../../atoms/input/Input.tsx";
-import TextArea from "../../atoms/textArea/TextArea.tsx";
-
+import Text from "../../atoms/text/Text";
+import {FC} from "react";
+import Typography from "../../atoms/typography/Typography";
+import Input from "../../atoms/input/Input";
+import TextArea from "../../atoms/textarea/TextArea";
+import Button from "../../atoms/button/Button";
 const ArticleView: FC = () => {
-    const { articles, addArticle, title, content, setTitle, setContent, deleteArticle } = useArticleStore();
-
-    const handleAddArticle = () => {
-        const newArticle = { title, content };
+    const {articles,addArticle, title, content, setTitle, setContent, deleteArticle } = useArticleStore()
+        const handleAddArticle = () => {
+        const newArticle = {title, content}
         addArticle(newArticle);
         setTitle('');
         setContent('');
-    };
+    }
 
     return (
         <div className={styles.container}>
@@ -28,22 +26,21 @@ const ArticleView: FC = () => {
                 name='title'
                 onChange={({ target: { value } }) => setTitle(value)}
                 value={title}
-            />
+                id="title"/>
             <TextArea
                 label='Content'
-                type='text'
                 name='content'
                 onChange={({ target: { value } }) => setContent(value)}
                 value={content}
             />
-            {articles.length > 0 && articles.map((article, index) => (
+            { articles.length > 0 && articles.map((article, index) => (
                 <div key={index}>
-                    <Text variant='bold'>
-                        {article.title}
-                    </Text>
-                    <Text variant='normal'>
-                        {article.content}
-                    </Text>
+                <Text variant='bold'>
+                    {article.title}
+                </Text>
+                <Text variant='normal'>
+                    {article.content}
+                </Text>
                     <Button
                         variant='primary'
                         onClick={() => deleteArticle(index)}
@@ -51,6 +48,7 @@ const ArticleView: FC = () => {
                         type='button'
                     />
                 </div>
+
             ))}
             <Button
                 variant='secondary'

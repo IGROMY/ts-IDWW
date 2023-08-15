@@ -1,11 +1,9 @@
-import {FC} from "react";
-import styles from "./BlogDetailsPage.module.scss"
-import PagesHeading from "../../molecules/pagesHeading/PagesHeading.tsx";
+import {FC} from 'react';
+import PagesHeading from "../../molecules/pagesHeading/PagesHeading";
 import blogDetailsBg from '../../../assets/images/PhotoBlogDetalesBg.png'
-
-const BlogDetailsPage: FC = () => {
+const BlogDetailsPage:FC = () => {
     return (
-        <div className={styles.container}>
+        <div>
             <PagesHeading
             backgroundImg={blogDetailsBg}
             subscribe='Home / Blog'

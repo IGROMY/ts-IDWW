@@ -1,10 +1,10 @@
-import {FC} from "react";
+import {FC} from 'react';
 import styles from './ContactUsPage.module.scss'
 
-const ContactUsPage: FC = () => {
+const ContactUsPage:FC = () => {
 
     return (
-        <div className={styles.container}>
+        <div className={styles.aboutUsPage}>
 
 
         </div>

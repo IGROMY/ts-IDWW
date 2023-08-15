@@ -1,18 +1,17 @@
-import {FC} from 'react';
+import {ChangeEvent, FC, FormEvent} from 'react';
 import styles from './Login.module.scss'
-import Typography from "../../atoms/typography/Typography.tsx";
-import Text from "../../atoms/text/Text.tsx";
-import Input from "../../atoms/input/Input.tsx";
-import Button from "../../atoms/button/Button.tsx";
+import Typography from "../../atoms/typography/Typography";
+import Text from "../../atoms/text/Text";
+import Input from "../../atoms/input/Input";
+import Button from "../../atoms/button/Button";
 import useLogin from "../../../store/useLogin.ts";
-
 const Login: FC = () => {
     const {email, password, setField, login} = useLogin()
-    const handleChange = (e) => {
+    const handleChange = (e:ChangeEvent<HTMLInputElement>) => {
         const {value, name} = e.target
         setField(name, value)
     }
-    const handleSubmit = (e) => {
+    const handleSubmit = (e:FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         login();
     }
@@ -35,7 +34,7 @@ const Login: FC = () => {
                     name='email'
                     value={email}
                     onChange={handleChange}
-                />
+                    id="email"/>
                 <Input
                     type='password'
                     label=''
@@ -43,7 +42,7 @@ const Login: FC = () => {
                     name='password'
                     value={password}
                     onChange={handleChange}
-                />
+                    id="password"/>
                 <Button
                     type='submit'
                     text='LogIn'

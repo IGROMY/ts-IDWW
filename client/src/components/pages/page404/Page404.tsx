@@ -1,12 +1,12 @@
 import {FC} from 'react';
 import styles from './Page404.module.scss'
 import img404 from '../../../assets/images/notFoundPage.jpg'
-import Typography from "../../atoms/typography/Typography.tsx";
-import Button from "../../atoms/button/Button.tsx";
+import Typography from "../../atoms/typography/Typography.jsx";
+import Button from "../../atoms/button/Button.jsx";
 import {useNavigate} from "react-router-dom";
 import {paths} from "../../../routes/constants/paths.ts";
 
-const Page404: FC = () => {
+const Page404:FC = () => {
     const navigate = useNavigate()
     const handleHomeLink = () =>{
         navigate(paths.HOME)

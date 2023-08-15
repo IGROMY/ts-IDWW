@@ -1,21 +1,19 @@
-import {FC} from "react";
+import {FC} from 'react';
+import styles from './AboutPage.module.scss'
 import usePeopleStore from "../../../store/usePeopleStore.ts";
-import CardPeopleAbout from "../../molecules/cardPeopleAbout/CardPeopleAbout";
-import PagesHeading from "../../molecules/pagesHeading/PagesHeading";
 import Typography from "../../atoms/typography/Typography";
-import CardProgressAbout from "../../molecules/cardProgressAbout/CardProgressAbout";
 import photo1 from "../../../assets/images/Human1.png";
 import photo2 from "../../../assets/images/Human2.png";
 import photo3 from "../../../assets/images/Human3.png";
+import CardProgressAbout from "../../molecules/cardProgressAbout/CardProgressAbout";
 import whatWeDo from "../../../assets/images/WhatWeDo.jpg"
 import endResult from "../../../assets/images/EndResult.jpg"
+import PagesHeading from "../../molecules/pagesHeading/PagesHeading";
 import aboutUS from "../../../assets/images/aboutUs.png";
 import bracketLeft from"../../../assets/images/bracketLeft.png"
 import bracketRight from "../../../assets/images/bracketRight.png"
-
-import styles from './AboutPage.module.scss'
-
-const AboutPage: FC = () => {
+import CardPeopleAbout from "../../molecules/cardPeopleAbout/CardPeopleAbout";
+const AboutPage:FC = () => {
     const {peopleInfo} = usePeopleStore()
     return (
         <div className={styles.container}>

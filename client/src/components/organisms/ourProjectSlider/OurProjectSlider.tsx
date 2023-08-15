@@ -4,9 +4,11 @@ import styles from './OurProjectSlider.module.scss'
 const OurProjectSlider: FC = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.tagsChanger}/>
-            <div className={styles.cardsWrapper}/>
-            <div className={styles.pagesChanger}/>
+            <div className={styles.tagsChnger}></div>
+            <div className={styles.cardsWrapper}>
+
+            </div>
+            <div className={styles.pagesChanger}></div>
         </div>
     );
 };
