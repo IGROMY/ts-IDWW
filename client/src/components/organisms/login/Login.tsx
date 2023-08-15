@@ -1,17 +1,17 @@
-import React from 'react';
+import {ChangeEvent, FC, FormEvent} from 'react';
 import styles from './Login.module.scss'
-import Typography from "../../atoms/typography/Typography.jsx";
-import Text from "../../atoms/text/Text.jsx";
-import Input from "../../atoms/input/Input.jsx";
-import Button from "../../atoms/button/Button.jsx";
+import Typography from "../../atoms/typography/Typography";
+import Text from "../../atoms/text/Text";
+import Input from "../../atoms/input/Input";
+import Button from "../../atoms/button/Button";
 import useLogin from "../../../store/useLogin.ts";
-const Login = () => {
-    const {email, password, setField, login, name, username} = useLogin()
-    const handleChange = (e) => {
+const Login: FC = () => {
+    const {email, password, setField, login} = useLogin()
+    const handleChange = (e:ChangeEvent<HTMLInputElement>) => {
         const {value, name} = e.target
         setField(name, value)
     }
-    const handleSubmit = (e) => {
+    const handleSubmit = (e:FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         login();
     }
@@ -34,7 +34,7 @@ const Login = () => {
                     name='email'
                     value={email}
                     onChange={handleChange}
-                />
+                    id="email"/>
                 <Input
                     type='password'
                     label=''
@@ -42,7 +42,7 @@ const Login = () => {
                     name='password'
                     value={password}
                     onChange={handleChange}
-                />
+                    id="password"/>
                 <Button
                     type='submit'
                     text='LogIn'

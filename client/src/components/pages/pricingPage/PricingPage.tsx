@@ -1,11 +1,11 @@
-import React from 'react';
+import {FC} from 'react';
 import styles from './PricingPage.module.scss'
 import PagesHeading from "../../molecules/pagesHeading/PagesHeading.jsx";
 import pricingBg from  '../../../assets/images/ImagepricingBg.png'
 import PricingCard from "../../molecules/pricingCard/PricingCard.tsx";
 import usePricingStore from "../../../store/usePricingStore.ts";
 
-const PricingPage = () => {
+const PricingPage:FC = () => {
     const {priceInfo} = usePricingStore()
 
     return (

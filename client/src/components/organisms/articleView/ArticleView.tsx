@@ -1,12 +1,12 @@
-import React from 'react';
 import styles from './ArticleView.module.scss'
-import Text from "../../atoms/text/Text.jsx";
-import Typography from "../../atoms/typography/Typography.jsx";
 import useArticleStore from "../../../store/useArticleStore.ts";
-import Button from "../../atoms/button/Button.jsx";
-import Input from "../../atoms/input/Input.jsx";
-import TextArea from "../../atoms/textArea/TextArea.jsx";
-const ArticleView = () => {
+import Text from "../../atoms/text/Text";
+import {FC} from "react";
+import Typography from "../../atoms/typography/Typography";
+import Input from "../../atoms/input/Input";
+import TextArea from "../../atoms/textarea/TextArea";
+import Button from "../../atoms/button/Button";
+const ArticleView: FC = () => {
     const {articles,addArticle, title, content, setTitle, setContent, deleteArticle } = useArticleStore()
         const handleAddArticle = () => {
         const newArticle = {title, content}
@@ -14,13 +14,6 @@ const ArticleView = () => {
         setTitle('');
         setContent('');
     }
-    const handleTitleChange = (event) => {
-        setTitle(event.target.value)
-    }
-    const handleContentChange = (event) => {
-        setContent(event.target.value)
-    }
-    console.log(title)
 
     return (
         <div className={styles.container}>
@@ -31,14 +24,13 @@ const ArticleView = () => {
                 label='Title'
                 type='text'
                 name='title'
-                onChange={handleTitleChange}
+                onChange={({ target: { value } }) => setTitle(value)}
                 value={title}
-            />
+                id="title"/>
             <TextArea
                 label='Content'
-                type='text'
                 name='content'
-                onChange={handleContentChange}
+                onChange={({ target: { value } }) => setContent(value)}
                 value={content}
             />
             { articles.length > 0 && articles.map((article, index) => (

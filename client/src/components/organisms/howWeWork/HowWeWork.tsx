@@ -1,8 +1,7 @@
-import React from 'react';
 import styles from './HowWeWork.module.scss'
-import Typography from "../../atoms/typography/Typography.jsx";
-import Text from "../../atoms/text/Text.jsx";
-import WorkStepCard from "../../molecules/workStepCard/WorkStepCard.jsx";
+import Typography from "../../atoms/typography/Typography";
+import Text from "../../atoms/text/Text";
+import WorkStepCard from "../../molecules/workStepCard/WorkStepCard";
 import useHowWeWorkStore from "../../../store/useHowWeWorkStore.ts";
 import icon1 from '../../../assets/icons/Icon0001.svg'
 import icon2 from '../../../assets/icons/Icon0002.svg'
@@ -12,7 +11,8 @@ import photo1 from '../../../assets/images/Photo0001.png'
 import photo2 from '../../../assets/images/Photo0002.png'
 import photo3 from '../../../assets/images/Photo0003.png'
 import photo4 from '../../../assets/images/Photo0004.png'
-const HowWeWork = () => {
+import {FC} from "react";
+const HowWeWork:FC = () => {
     const {workStepInfo} = useHowWeWorkStore()
     const iconsArray = [icon1, icon2, icon3, icon4];
     const imagesArray = [photo1, photo2, photo3, photo4];
@@ -40,9 +40,8 @@ const HowWeWork = () => {
                         key={step.id}
                         heading={step.heading}
                         text={step.text}
-                        icon={step.icon}
-                        photo={step.photo}
                         stepNumber={step.stepNumber}
+                        photoUrl='https://kartinkin.net/pics/uploads/posts/2022-09/1662412649_32-kartinkin-net-p-pismennie-stoli-v-minimalistichnom-stile-i-32.jpg'
                     />
                 ))}
             </div>

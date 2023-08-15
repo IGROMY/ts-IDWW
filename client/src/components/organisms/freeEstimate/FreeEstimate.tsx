@@ -1,19 +1,20 @@
-import React from 'react';
+import {FC} from 'react';
 import styles from "./FreeEstimate.module.scss";
-import Typography from "../../atoms/typography/Typography.jsx";
-import Text from "../../atoms/text/Text.jsx";
+import Typography from "../../atoms/typography/Typography";
+import Text from "../../atoms/text/Text";
 import SVG from "react-inlinesvg";
 import callIcon from "../../../assets/icons/Call Icon.svg";
-import Button from "../../atoms/button/Button.jsx";
+import Button from "../../atoms/button/Button";
 import estimateImg from "../../../assets/images/Photohome2.png";
 import {useNavigate} from "react-router-dom";
 import {paths} from "../../../routes/constants/paths.ts";
 
-const FreeEstimate = () => {
+const FreeEstimate:FC = () => {
     const navigate = useNavigate();
     const handleContactLink =() =>{
         navigate(paths.CONTACT_US)
     }
+    // @ts-ignore
     return (
         <div className={styles.freeEstimate}>
             <div className={styles.estimateContent}>
@@ -45,7 +46,7 @@ const FreeEstimate = () => {
                         text='Get Free Estimate'
                         variant='primary'
                         onClick={handleContactLink}
-                        type='link'
+                        type="button"
                     />
                 </div>
             </div>

@@ -1,12 +1,12 @@
-import React from 'react';
 import styles from "./PeopleThinks.module.scss";
-import Typography from "../../atoms/typography/Typography.jsx";
-import PeopleReviewCard from "../../molecules/peopleReviewCard/PeopleReviewCard.jsx";
+import Typography from "../../atoms/typography/Typography";
+import PeopleReviewCard from "../../molecules/peopleReviewCard/PeopleReviewCard";
 import avatar1 from "../../../assets/images/Imageperson1.png";
 import avatar2 from "../../../assets/images/Imageperson2.png";
 import avatar3 from "../../../assets/images/Imageperson3.png";
+import {FC} from "react";
 
-const PeopleThinks = () => {
+const PeopleThinks: FC = () => {
     return (
         <div className={styles.peopleThinks}>
             <div className={styles.peopleThinksHeading}>

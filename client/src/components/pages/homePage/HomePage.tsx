@@ -1,21 +1,21 @@
-import React from 'react';
+import {FC} from 'react';
 import styles from './HomePage.module.scss'
-import Button from "../../atoms/button/Button.jsx";
-import Typography from "../../atoms/typography/Typography.jsx";
-import WannaJoinWrapper from "../../molecules/wannaJoinWrapper/wannaJoinWrapper.jsx";
+import Button from "../../atoms/button/Button";
+import Typography from "../../atoms/typography/Typography";
 import bgPrevImg from '../../../assets/images/Photohome.png'
-import Text from "../../atoms/text/Text.jsx";
-import ClientLogo from "../../atoms/clientLogo/ClientLogo.jsx";
-import Counter from "../../atoms/counter/Counter.jsx";
+import Text from "../../atoms/text/Text";
+import ClientLogo from "../../atoms/clientLogo/ClientLogo";
+import Counter from "../../atoms/counter/Counter";
 import {useNavigate} from "react-router-dom";
-import ArticlesAndNews from "../../organisms/articlesAndNews/ArticlesAndNews.jsx";
-import FollowOurProject from "../../organisms/followOurProject/FollowOurProject.jsx";
-import PeopleThinks from "../../organisms/peopleThinks/PeopleThinks.jsx";
-import FreeEstimate from "../../organisms/freeEstimate/FreeEstimate.jsx";
-import WorksWrapper from "../../organisms/worksWrapper/WorksWrapper.jsx";
+import ArticlesAndNews from "../../organisms/articlesAndNews/ArticlesAndNews";
+import FollowOurProject from "../../organisms/followOurProject/FollowOurProject";
+import PeopleThinks from "../../organisms/peopleThinks/PeopleThinks";
+import FreeEstimate from "../../organisms/freeEstimate/FreeEstimate";
+import WorksWrapper from "../../organisms/worksWrapper/WorksWrapper";
 import useNewsCardStore from "../../../store/useNewsCardStore.ts";
+import WannaJoinWrapper from "../../molecules/wannaJoinWrapper/WannaJoinWrapper";
 
-const HomePage = () => {
+const HomePage:FC = () => {
     const navigate = useNavigate();
     const {newsCardInfo} = useNewsCardStore()
     const homePageBackground = {
@@ -41,7 +41,7 @@ const HomePage = () => {
                         variant='primary'
                         text='Get started'
                         onClick={handleServiceLink}
-                        type='link'
+                        type='button'
                     />
                 </div>
             </div>

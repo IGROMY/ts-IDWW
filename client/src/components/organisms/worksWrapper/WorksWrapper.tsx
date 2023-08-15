@@ -1,8 +1,8 @@
-import React from 'react';
 import styles from "./WorksWrapper.module.scss";
-import ReadMoreCard from "../../molecules/readMoreCard/ReadMoreCard.jsx";
+import ReadMoreCard from "../../molecules/readMoreCard/ReadMoreCard";
+import {FC} from "react";
 
-const WorksWrapper = () => {
+const WorksWrapper: FC = () => {
     return (
         <div className={styles.workWrapper}>
             <ReadMoreCard

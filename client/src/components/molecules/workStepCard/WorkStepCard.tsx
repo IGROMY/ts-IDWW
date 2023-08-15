@@ -19,7 +19,7 @@ const WorkStepCard:FC<IWorkStepCardProps> = ({heading, text, stepNumber, variant
             </div>
             <div className={styles["informationWrapper"]}>
                 <div className={styles["stepWrapper"]}>
-                    <SVG src={iconUrl}/>
+                    { iconUrl && <SVG src={iconUrl}/>}
                     <Typography variant='altH1'>
                         {stepNumber}
                     </Typography>

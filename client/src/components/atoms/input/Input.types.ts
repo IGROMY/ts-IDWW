@@ -1,9 +1,7 @@
-import {ReactNode} from "react";
-
 export interface IInputProps {
     type: string;
-    value: number;
-    onChange: () => void;
+    value: string;
+    onChange: (event:any) => void;
     maxLength?: number;
     minLength?: number;
     name: string;

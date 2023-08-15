@@ -1,8 +1,7 @@
-import React from 'react';
-import styles from './ BlogDetailsPage.module.scss'
-import PagesHeading from "../../molecules/pagesHeading/PagesHeading.jsx";
+import {FC} from 'react';
+import PagesHeading from "../../molecules/pagesHeading/PagesHeading";
 import blogDetailsBg from '../../../assets/images/PhotoBlogDetalesBg.png'
-const BlogDetailsPage = () => {
+const BlogDetailsPage:FC = () => {
     return (
         <div>
             <PagesHeading

@@ -1,7 +1,7 @@
-import React from 'react';
+import {FC} from 'react';
 import styles from './ContactUsPage.module.scss'
 
-const ContactUsPage = () => {
+const ContactUsPage:FC = () => {
 
     return (
         <div className={styles.aboutUsPage}>
