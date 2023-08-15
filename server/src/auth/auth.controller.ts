@@ -33,7 +33,12 @@ router.post('/login', async (req: Request, res: Response) => {
 
 router.get('/refresh-token', async (req: Request, res: Response) => {
     try {
-        const { userId } = req.body;
+        const userId = req.query.userId as string;
+
+        if (!userId) {
+            return res.status(400).json({ message: 'userId query parameter is required.' });
+        }
+
         const refreshToken = await authService.getRefreshToken(userId);
 
         if (!refreshToken) {
