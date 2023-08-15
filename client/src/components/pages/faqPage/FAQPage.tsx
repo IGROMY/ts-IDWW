@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import styles from './FAQPage.module.scss'
+// import styles from './FAQPage.module.scss'
 const FaqPage: FC = () => {
     return (
         <div>

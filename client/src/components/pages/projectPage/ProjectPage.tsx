@@ -2,7 +2,7 @@ import {FC} from 'react';
 import styles from './ProjectPage.module.scss'
 import PagesHeading from "../../molecules/pagesHeading/PagesHeading.jsx";
 import project from "../../../assets/images/projeck.png";
-//import SVG from "react-inlinesvg";
+
 //import ellipse from "../../../assets/icons/EllipsePagination.svg";
 //import ellipseArrow from "../../../assets/icons/ellipseArrow.svg";
 

@@ -10,7 +10,7 @@ const LoginPage:FC = () => {
             <PagesHeading
             backgroundImg={bgImg}
             subscribe='Authorization / Login Page'
-             name={}/>
+             name='login'/>
             <code>{JSON.stringify(import.meta.env.VITE_API_URL)}</code>
             <Login/>
         </div>

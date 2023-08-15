@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import styles from './TeamSinglePage.module.scss'
+// import styles from './TeamSinglePage.module.scss'
 const TeamSinglePage: FC = () => {
     return (
         <div>

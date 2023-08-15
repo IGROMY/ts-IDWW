@@ -1,8 +1,8 @@
 import {FC} from 'react';
-import styles from './ChangelogPage.module.scss'
+// import styles from './ChangelogPage.module.scss'
 const ChangelogPage: FC = () => {
     return (
-        <div>
+        <div >
 
         </div>
     );

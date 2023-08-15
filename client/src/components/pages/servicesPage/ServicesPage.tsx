@@ -2,7 +2,7 @@ import {FC} from 'react';
 import styles from './ServicesPage.module.scss'
 import PagesHeading from "../../molecules/pagesHeading/PagesHeading";
 import servicesBg from "../../../assets/images/ImageServicesBg.png";
-import WannaJoinWrapper from "../../molecules/wannaJoinWrapper/wannaJoinWrapper";
+import WannaJoinWrapper from "../../molecules/wannaJoinWrapper/WannaJoinWrapper.tsx";
 import useWorksStore from "../../../store/useWorksStore.ts";
 import ReadMoreCard from "../../molecules/readMoreCard/ReadMoreCard.jsx";
 import HowWeWork from "../../organisms/howWeWork/HowWeWork.tsx";
