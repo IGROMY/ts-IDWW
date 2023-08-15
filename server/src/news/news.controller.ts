@@ -27,12 +27,14 @@ router.post('/', createNewsValidationRules, async (req: Request, res: Response) 
     }
 });
 
-router.get('/', async (_req: Request, res: Response) => {
+router.get('/', async (req: Request, res: Response) => {
     try {
-        const newsItems = await newsService.getNews();
+        const page = Number(req.query.page) || 1;
+        const limit = Number(req.query.limit) || 3;
+        const newsItems = await newsService.getNews(page, limit);
         res.json(newsItems);
-    } catch (error) {
-        res.status(500).json({ message: 'An error occurred while fetching the news.', error: error.message });
+    } catch (err) {
+        res.status(500).json({ message: 'Error occurred during fetching news.', error: err.message });
     }
 });
 

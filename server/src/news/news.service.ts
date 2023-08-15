@@ -18,8 +18,11 @@ export class NewsService {
         return newNews;
     }
 
-    async getNews(): Promise<News[]> {
-        return prisma.news.findMany();
+    async getNews(page: number, limit: number): Promise<News[]> {
+        return prisma.news.findMany({
+            skip: (page - 1) * limit,
+            take: limit,
+        });
     }
 
     async getNewsById(id: number): Promise<News | null> {
