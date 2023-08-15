@@ -1,24 +1,22 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import CardPeopleAbout from "./CardPeopleAbout.tsx";
+import {StoryFn, Meta} from '@storybook/react';
+import CardPeopleAbout,  from './CardPeopleAbout';
+import {ICardPeopleAboutProps} from "./CardPeopleAbout.types";
 
-const meta = {
+export default {
     title: 'Example/CardPeopleAbout',
     component: CardPeopleAbout,
     parameters: {
         layout: 'centered',
     },
     tags: ['autodocs'],
+} as Meta;
 
-} satisfies Meta<typeof CardPeopleAbout>;
-
-export default meta;
-type Story = StoryObj<typeof meta>;
-export const cardPeopleAbout: Story = {
+export const cardPeopleAbout: StoryFn<typeof ICardPeopleAboutProps> = {
     args: {
         fullName: "FullName",
         job: "Job",
         location: 'Location',
         phoneNumber: 'PhoneNumber',
-        email: 'EMail'
+        email: 'EMail',
     },
 };

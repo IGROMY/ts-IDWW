@@ -40,7 +40,14 @@ router.get('/:id', async (req: Request, res: Response) => {
         res.status(500).json({ message: 'An error occurred while fetching the article.', error: error.message });
     }
 });
-
+router.get('/', async (req: Request, res: Response) => {
+    try {
+        const articles = await articleService.getArticles();
+        res.json(articles);
+    } catch (error) {
+        res.status(500).json({ message: 'An error occurred while fetching all the articles.', error: error.message });
+    }
+});
 router.put('/:id', createArticleValidationRules, async (req: Request, res: Response) => {
     try {
         const errors = validationResult(req);
