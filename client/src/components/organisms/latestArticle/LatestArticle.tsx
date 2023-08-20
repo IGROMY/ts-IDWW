@@ -7,6 +7,7 @@ import SVG from "react-inlinesvg";
 import linkIcon from "../../../assets/icons/linkIcon.svg";
 import {FC} from "react";
 import {ILatestArticleProps} from "./LatestArticle.types";
+import {convertDate} from "../../../helpers/convertDate.ts";
 const LatestArticle:FC<ILatestArticleProps> = ({newsCardInfo}) => {
     const latestImg = {
         backgroundImage: `url(${latestArticleImg})`,
@@ -39,7 +40,7 @@ const LatestArticle:FC<ILatestArticleProps> = ({newsCardInfo}) => {
                             <div className={styles.dateAndLinkWrapper}>
                                 <div>
                                     <Text variant='normal'>
-                                        {newsCard.date}
+                                        {convertDate(newsCard.date)}
                                     </Text>
                                 </div>
                                 <div>

@@ -1,6 +1,10 @@
 @import "../../../styles/global";
 .layout {
-  width: 1920px;
   background-color: $bg-color;
-  margin: 0 auto;
+  width: 1920px;
+  background-size: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
